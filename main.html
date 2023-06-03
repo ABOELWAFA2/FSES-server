@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital</title>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+  <script src="retrieveData.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+	body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #CACFD2;
+
+}
+video{
+  width:1000px;
+  height:600px;
+  position: absolute;
+  top:400px  ;
+}
+header{
+    background-color: #212F3D;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    border: 3px solid #73AD21;
+
+}
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: ;
+}
+h2 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#button{
+   background-color: #73AD21;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width:100%;
+border-style: solid;
+  border-color: #212F3D;
+
+
+}
+#button:hover {
+  background-color: white;
+  color:#212F3D;
+}
+#data-container1{
+    background-color: #73AD21;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width:97%;
+    border-style: solid;
+  border-color: #212F3D;
+
+}
+
+#bot1{
+  background-color: #73AD21;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  width:100%;
+	  border-style: solid;
+  border-color: #212F3D; }
+
+#bot1:hover {
+  background-color: white;
+  color:#212F3D;
+}
+
+  </style>
+</head>
+<body>
+<!--Server-->
+	<header>
+	<h1>Fast Secured Emergency System</h1>
+  <h2>Hospital</h2>
+  <button type="button" onclick="retrieveData()" id="button"><i class="fa fa-download"></i>Retrieve Data</button>
+<button id="bot1" >
+      <a href="receiver.html">Chat With Paramedic</a><i class="fa fa-wechat"></i>
+    </button> 
+<div id="data-container1">
+    
+  </div> 
+</header><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br>
+    <div id="data-container2">
+    
+  </form>
+        
+</body>
+</html>
+
+
